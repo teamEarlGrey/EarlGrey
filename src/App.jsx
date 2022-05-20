@@ -1,25 +1,28 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import About from "./About";
-import Users from "./Users";
 import "./index.css";
+import TopPage from "./pages/TopPage";
+import FirstTower from "./pages/FirstTower";
+import SecondTower from "./pages/SecondTower";
+import ThirdTower from "./pages/ThirdTower";
+import FourthTower from "./pages/FourthTower";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div>
-        <Link to="/">Home</Link>
-        <Link to="about" className={'text-red-600'}>
-          About
-        </Link>
-        <Link to="users">Users</Link>
+        {/* ヘッダー */}
+        <div className="p-5 border-b-2 text-xl font-medium">
+          <Link to="/" className="px-4">システム名</Link>
+          <Link to="second" className="px-4">設備</Link>
+        </div>
 
         <Routes>
-          <Route path="/" />
-
-          <Route path="about" element={<About />} />
-
-          <Route path="users" element={<Users />} />
+          <Route path="/" element={<TopPage />} />
+          <Route path="first" element={<FirstTower />} />
+          <Route path="second" element={<SecondTower />} />
+          <Route path="third" element={<ThirdTower />} />
+          <Route path="fourth" element={<FourthTower />} />
         </Routes>
       </div>
     </BrowserRouter>
