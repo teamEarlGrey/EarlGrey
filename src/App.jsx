@@ -10,11 +10,19 @@ import FourthTower from "./pages/FourthTower";
 const App = () => {
   return (
     <BrowserRouter>
-      <div>
+      <div id="wrapper">
         {/* ヘッダー */}
-        <div className="p-5 border-b-2 text-xl font-medium">
-          <Link to="/" className="px-4">システム名</Link>
-          <Link to="second" className="px-4">設備</Link>
+        <div className="p-5 border-b-2 text-xl font-medium sticky top-0 flex bg-white">
+          <Link to="/" className="px-4">
+            <img src="./images/logo.png" alt="KitAru" className={`h-8 px-3`} />
+          </Link>
+
+          <a href="#aki" className="px-4">
+            空き教室
+          </a>
+          <a href="#setubi" className="px-4">
+            設備
+          </a>
         </div>
 
         <Routes>

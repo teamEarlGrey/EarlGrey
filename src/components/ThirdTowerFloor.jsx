@@ -13,7 +13,7 @@ const ThirdTowerFloor = () => {
           <div className={`basis-1/7 border m-0.5 px-2 py-1`}>階段</div>
         </div>
         <div className={`flex flex-row-reverse`}>
-          <div className={`w-1/7 border m-0.5 px-2 py-1`}>階段</div>
+          <div className={`basis-1/7 border m-0.5 px-2 py-1`}>階段</div>
         </div>
         <div className={`flex flex-row align-middle`}>
           <div className={`basis-1/3 border m-0.5 py-9 h-auto`}>3301</div>
