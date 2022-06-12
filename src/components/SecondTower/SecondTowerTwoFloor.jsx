@@ -4,7 +4,6 @@ const SecondTowerTwoFloor = () => {
   return (
     <div className={`ml-[150px] w-[360px]`}>
       <div className={`flex-row mt-20 text-center relative`}>
-        {/*  */}
         <div
           className={`flex w-[280px] border-y-2 border-l-2 border-[#000] absolute`}
         >
@@ -43,13 +42,35 @@ const SecondTowerTwoFloor = () => {
           <div
             className={`w-[80px] h-[120px] border-l-2 border-b-2 border-[#000] px-2`}
           ></div>
-          <div className={`w-[80px] h-[252px] border-r-2 border-b-2 border-[#000] flex flex-row`}>
-            <div className={`w-[40px] h-[252px]`}></div>
+          <div
+            className={`w-[80px] h-[252px] border-r-2 border-b-2 border-[#000] flex flex-row`}
+          >
+            <div className={`w-[40px] h-[252px]`}>
+              <img
+                className={`h-[103px] mt-0.5`}
+                src="./images/stairs.png"
+                alt="階段"
+              />
+            </div>
             <div className={`w-[40px] flex-col`}>
-              <div className={`w-[35px] h-[48px] border-2 border-[#000] mt-0.5 mr-0.5`}>WC (女)</div>
-              <div className={`w-[35px] h-[48px] border-x-2 border-[#000] mr-0.5`}>WC (男)</div>
-              <div className={`w-[35px] h-[30px] border-2 border-[#000] mr-0.5`}>EV</div>
-              <div className={`w-[35px] h-[120px] border-x-2 border-b-2 border-[#000] mr-0.5 mb-0.5`}></div>
+              <div
+                className={`w-[35px] h-[48px] border-2 border-[#000] mt-0.5 mr-0.5`}
+              >
+                WC (女)
+              </div>
+              <div
+                className={`w-[35px] h-[48px] border-x-2 border-[#000] mr-0.5`}
+              >
+                WC (男)
+              </div>
+              <div
+                className={`w-[35px] h-[30px] border-2 border-[#000] mr-0.5`}
+              >
+                EV
+              </div>
+              <div
+                className={`w-[35px] h-[120px] border-x-2 border-b-2 border-[#000] mr-0.5 mb-0.5`}
+              ></div>
             </div>
           </div>
         </div>
