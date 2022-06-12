@@ -1,59 +1,95 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SecondTowerTwoFloor from "../components/SecondTower/SecondTowerTwoFloor";
 import SecondTowerThreeFloor from "../components/SecondTower/SecondTowerThreeFloor";
 import SecondTowerFourFloor from "../components/SecondTower/SecondTowerFourFloor";
+import ThirdTowerFloor from "../components/ThirdTower/ThirdTowerFloor";
 
 const SecondTower = () => {
   const [floor, setFloor] = React.useState(2);
   return (
-    <div className={`flex flex-row`}>
-      <div className={`w-1/2`}>
-        {floor === 2 && <SecondTowerTwoFloor />}
-        {floor === 3 && <SecondTowerThreeFloor />}
-        {floor === 4 && <SecondTowerFourFloor />}
-      </div>
-      <div className={`w-1/2`}>
-        <div className={`w-[600px] relative `}>
-          <img
-            src="./images/SecondTower/SecondTower_bg.png"
-            alt="2号館"
-            className={`absolute`}
-          />
-          <div className={`absolute w-[400px] mx-[110px] my-[118px]`}>
+    <>
+      <header>
+        <div className="p-5 border-b-2 text-xl font-medium sticky top-0 flex bg-white">
+          <Link to="/" className="px-4">
+            <img src="./images/logo.png" alt="KitAru" className={`h-8 px-3`} />
+          </Link>
+          <a href="/#aki" className="px-4">
+            空き教室
+          </a>
+          <a href="/#setubi" className="px-4">
+            設備
+          </a>
+        </div>
+      </header>
+      <div className={`flex flex-row`}>
+        <div className={`w-1/2`}>
+          {floor === 2 && <ThirdTowerFloor />}
+          {floor === 3 && <SecondTowerThreeFloor />}
+          {floor === 4 && <SecondTowerFourFloor />}
+        </div>
+        <div className={`w-1/2`}>
+          <div className={`w-[600px] relative `}>
             <img
-              src="./images/SecondTower/SecondTower_six.png"
-              alt="6階"
-              className={`mt-1 hover:brightness-75 rounded-2xl ${floor === 6 && `contrast-75`}`}
-              onClick={() => setFloor((floor) => 6)}
+              src="./images/SecondTower/SecondTower_bg.png"
+              alt="2号館"
+              className={`absolute`}
             />
-            <img
-              src="./images/SecondTower/SecondTower_five.png"
-              alt="5階"
-              className={`mt-1 hover:brightness-75 rounded-2xl ${floor === 5 && `contrast-75`}`}
-              onClick={() => setFloor((floor) => 5)}
-            />
-            <img
-              src="./images/SecondTower/SecondTower_four.png"
-              alt="4階"
-              className={`mt-1 hover:brightness-75 rounded-2xl ${floor === 4 && `contrast-75`}`}
-              onClick={() => setFloor((floor) => 4)}
-            />
-            <img
-              src="./images/SecondTower/SecondTower_three.png"
-              alt="3階"
-              className={`mt-1 hover:brightness-75 rounded-2xl ${floor === 3 && `contrast-75`}`}
-              onClick={() => setFloor((floor) => 3)}
-            />
-            <img
-              src="./images/SecondTower/SecondTower_two.png"
-              alt="2階"
-              className={`mt-1 hover:brightness-75 rounded-2xl ${floor === 2 && `contrast-75`}`}
-              onClick={() => setFloor((floor) => 2)}
-            />
+            <div className={`absolute w-[400px] mx-[105px] my-[118px]`}>
+              {/* 6階 */}
+              <div
+                className={`w-[400px] my-[8px] text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  floor === 6 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
+                }`}
+                onClick={() => setFloor((floor) => 6)}
+              >
+                6F
+              </div>
+
+              {/* 5階 */}
+              <div
+                className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  floor === 5 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
+                }`}
+                onClick={() => setFloor((floor) => 5)}
+              >
+                5F
+              </div>
+
+              {/* 4階 */}
+              <div
+                className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  floor === 4 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
+                }`}
+                onClick={() => setFloor((floor) => 4)}
+              >
+                4F
+              </div>
+
+              {/* ３階 */}
+              <div
+                className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  floor === 3 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
+                }`}
+                onClick={() => setFloor((floor) => 3)}
+              >
+                3F
+              </div>
+
+              {/* 2階 */}
+              <div
+                className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  floor === 2 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
+                }`}
+                onClick={() => setFloor((floor) => 2)}
+              >
+                2F
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
