@@ -19,16 +19,16 @@ const TopPage = () => {
       </header>
       <div
         id="top"
-        className={`py-20 bg-gradient-to-b from-[#7FD4FF] to-[#fff] h-[240px]`}
+        className={`pt-[150px] bg-gradient-to-b from-[#7FD4FF] to-[#fff] h-[240px]`}
       >
         <img
           src="./images/logo.png"
           alt="KitAru"
-          className={`h-[80px] mx-auto`}
+          className={`h-[120px] mx-auto drop-shadow-xl`}
         />
       </div>
       <div className={`p-5`}>
-        <div id="aki" className={`text-2xl px-2 font-bold mt-4 pt-20`}>
+        <div id="aki" className={`text-2xl px-2 font-bold mt-4 pt-16`}>
           空き教室を探す
         </div>
         {/* 号館 */}
