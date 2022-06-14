@@ -4,6 +4,8 @@ import SecondTowerTwoFloor from "../components/SecondTower/SecondTowerTwoFloor";
 import SecondTowerThreeFloor from "../components/SecondTower/SecondTowerThreeFloor";
 import SecondTowerFourFloor from "../components/SecondTower/SecondTowerFourFloor";
 import ThirdTowerFloor from "../components/ThirdTower/ThirdTowerFloor";
+import SecondTowerFiveFloor from "../components/SecondTower/SecondTowerFiveFloor";
+import SecondTowerSixFloor from "../components/SecondTower/SecondTowerSixFloor";
 
 const SecondTower = () => {
   const [floor, setFloor] = React.useState(2);
@@ -24,9 +26,11 @@ const SecondTower = () => {
       </header>
       <div className={`flex flex-row`}>
         <div className={`w-1/2`}>
-          {floor === 2 && <ThirdTowerFloor />}
+          {floor === 2 && <SecondTowerTwoFloor />}
           {floor === 3 && <SecondTowerThreeFloor />}
           {floor === 4 && <SecondTowerFourFloor />}
+          {floor === 5 && <SecondTowerFiveFloor />}
+          {floor === 6 && <SecondTowerSixFloor />}
         </div>
         <div className={`w-1/2`}>
           <div className={`w-[600px] relative `}>
