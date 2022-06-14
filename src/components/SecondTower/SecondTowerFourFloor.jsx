@@ -10,33 +10,33 @@ const SecondTowerFourFloor = () => {
         >
           <div className={`flex-col `}>
             <div
-              className={`w-[120px] h-[120px] border-2 border-[#000] my-0.5 ml-0.5 px-1 py-[32px]`}
+              className={`w-[120px] h-[113px] border-2 border-[#000] my-0.5 ml-0.5 px-1 py-[40px]`}
             >
               2403実習室
             </div>
             <div
-              className={`w-[120px] h-[120px] border-2 border-[#000] my-0.5 ml-0.5 px-1 py-[32px]`}
+              className={`w-[120px] h-[113px] border-2 border-[#000] my-0.5 ml-0.5 px-1 py-[40px]`}
             >
               2404実習室
             </div>
             <div
-              className={`w-[120px] h-[120px] border-2 border-[#000] my-0.5 ml-0.5 px-1 py-[32px]`}
+              className={`w-[120px] h-[130px] border-2 border-[#000] my-0.5 ml-0.5 px-2 py-[32px]`}
             >
-              女子学生専用パウダールーム
+              2405ノートPC対応教室
             </div>
           </div>
           <div className={`flex-col`}>
             <div className={`w-[40px] h-[240px] m-0.5 px-2 py-1`}></div>
             <div
-              className={`w-[155px] h-[120px] border-y-2 border-r-2 border-[#000] my-0.5 absolute py-[45px]`}
+              className={`w-[153px] h-[116px] border-2 border-[#000] m-0.5 absolute py-[45px]`}
             >
-              図書室
+              2402実習室
             </div>
           </div>
           <div
             className={`w-[120px] h-[220px] border-2 border-[#000] m-0.5 px-2 py-[90px]`}
           >
-            2301ノートPC対応教室
+            2401実習室
           </div>
         </div>
         <div className={`flex-col absolute right-0`}>
@@ -44,27 +44,33 @@ const SecondTowerFourFloor = () => {
             className={`w-[80px] h-[120px] border-l-2 border-b-2 border-[#000] px-2`}
           ></div>
           <div
-            className={`w-[80px] h-[252px] border-r-2 border-b-2 border-[#000] flex flex-row`}
+            className={`w-[80px] h-[248px] border-r-2 border-b-2 border-[#000] flex justify-between`}
           >
-            <div className={`w-[40px] h-[252px]`}></div>
-            <div className={`w-[40px] flex-col`}>
+            <div className={`w-[40px] h-[252px]`}>
+              <img
+                className={`h-[103px] mt-0.5`}
+                src="./images/stairs.png"
+                alt="階段"
+              />
+            </div>
+            <div className={`w-[33px] flex-col mr-0.5`}>
               <div
-                className={`w-[35px] h-[48px] border-2 border-[#000] mt-0.5 mr-0.5`}
+                className={`w-[33px] h-[51px] border-2 border-[#000] mt-0.5 mr-0.5`}
               >
                 WC (女)
               </div>
               <div
-                className={`w-[35px] h-[48px] border-x-2 border-[#000] mr-0.5`}
+                className={`w-[33px] h-[47px] border-x-2 border-[#000] mr-0.5`}
               >
                 WC (男)
               </div>
               <div
-                className={`w-[35px] h-[30px] border-2 border-[#000] mr-0.5`}
+                className={`w-[33px] h-[29.5px] border-2 border-[#000] mr-0.5`}
               >
                 EV
               </div>
               <div
-                className={`w-[35px] h-[120px] border-x-2 border-b-2 border-[#000] mr-0.5 mb-0.5`}
+                className={`w-[33px] h-[115px] border-x-2 border-b-2 border-[#000] mr-0.5 mb-0.5`}
               ></div>
             </div>
           </div>
