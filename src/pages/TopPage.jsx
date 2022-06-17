@@ -32,18 +32,30 @@ const TopPage = () => {
           空き教室を探す
         </div>
         {/* 号館 */}
-        <div className="p-10 border-b-2 text-xl font-medium flex">
+        <div className="p-10 mb-10 border-8 bg-gray-100 text-xl font-medium flex">
           <Link to="first" className={`w-1/4`}>
-            <img src="./images/room111.png" alt="1号館" />
+            <div className={`flex-col`}>
+              <img src="./images/FirstTower.png" alt="1号館" />
+              <div className={`text-center mt-10`}>1号館</div>
+            </div>
           </Link>
           <Link to="second" className={`w-1/4`}>
-            <img src="./images/room2.png" alt="2号館" />
+            <div className={`flex-col`}>
+              <img src="./images/SecondTower.png" alt="2号館" />
+              <div className={`text-center mt-10`}>2号館</div>
+            </div>
           </Link>
           <Link to="third" className={`w-1/4`}>
-            <img src="./images/room3.png" alt="3号館" />
+            <div className={`flex-col`}>
+              <img src="./images/room3.png" alt="3号館" />
+              <div className={`text-center mt-10`}>3号館</div>
+            </div>
           </Link>
           <Link to="fourth" className={`w-1/4`}>
-            <img src="./images/room4.png" alt="4号館" />
+            <div className={`flex-col`}>
+              <img src="./images/room4.png" alt="4号館" />
+              <div className={`text-center mt-10`}>4号館</div>
+            </div>
           </Link>
         </div>
         <div id="setubi" className={`text-2xl px-2 font-bold`}>
