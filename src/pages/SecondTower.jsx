@@ -35,7 +35,7 @@ const SecondTower = () => {
         <div className={`w-1/2`}>
           <div className={`w-[600px] relative `}>
             <img
-              src="./images/SecondTower/SecondTower_bg.png"
+              src="./images/SecondTower_bg.png"
               alt="2号館"
               className={`absolute`}
             />
