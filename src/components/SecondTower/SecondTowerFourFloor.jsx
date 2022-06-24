@@ -2,7 +2,7 @@ import React from "react";
 
 const SecondTowerFourFloor = () => {
   return (
-    <div className={`ml-[150px] w-[360px]`}>
+    <div className={`ml-[150px] w-[360px] h-[400px]`}>
       <div className={`flex-row mt-20 text-center relative`}>
         {/*  */}
         <div
@@ -20,7 +20,7 @@ const SecondTowerFourFloor = () => {
               2404実習室
             </div>
             <div
-              className={`w-[120px] h-[130px] border-2 border-[#000] my-0.5 ml-0.5 px-2 py-[32px]`}
+              className={`w-[120px] h-[130px] border-2 border-[#000] my-0.5 ml-0.5 px-2 py-[32px] bg-[#ff4c4c]`}
             >
               2405ノートPC対応教室
             </div>
@@ -34,7 +34,7 @@ const SecondTowerFourFloor = () => {
             </div>
           </div>
           <div
-            className={`w-[120px] h-[220px] border-2 border-[#000] m-0.5 px-2 py-[90px]`}
+            className={`w-[120px] h-[220px] border-2 border-[#000] m-0.5 px-2 py-[90px] bg-[#ffea7f]`}
           >
             2401実習室
           </div>

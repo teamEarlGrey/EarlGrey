@@ -26,11 +26,23 @@ const SecondTower = () => {
       </header>
       <div className={`flex flex-row`}>
         <div className={`w-1/2`}>
-          {floor === 2 && <SecondTowerTwoFloor />}
-          {floor === 3 && <SecondTowerThreeFloor />}
-          {floor === 4 && <SecondTowerFourFloor />}
-          {floor === 5 && <SecondTowerFiveFloor />}
-          {floor === 6 && <SecondTowerSixFloor />}
+          <div className={`flex-col`}>
+            {floor === 2 && <SecondTowerTwoFloor />}
+            {floor === 3 && <SecondTowerThreeFloor />}
+            {floor === 4 && <SecondTowerFourFloor />}
+            {floor === 5 && <SecondTowerFiveFloor />}
+            {floor === 6 && <SecondTowerSixFloor />}
+            <div className={`flex`}>
+              <div
+                className={`h-[28px] w-[28px] bg-[#ff4c4c] ml-[190px]`}
+              ></div>
+              <div className={`text-lg`}>・・・予約・授業</div>
+              <div
+                className={`h-[28px] w-[28px] bg-[#ffea7f] ml-[20px]`}
+              ></div>
+              <div className={`text-lg`}>・・・利用中</div>
+            </div>
+          </div>
         </div>
         <div className={`w-1/2`}>
           <div className={`w-[600px] relative `}>

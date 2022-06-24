@@ -2,7 +2,7 @@ import React from "react";
 
 const SecondTowerSixFloor = () => {
   return (
-    <div className={`ml-[150px] w-[360px]`}>
+    <div className={`ml-[150px] w-[360px] h-[400px]`}>
       <div className={`flex-row mt-20 text-center relative`}>
         {/*  */}
         <div
