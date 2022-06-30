@@ -36,7 +36,7 @@ const FirstTower = () => {
             </div>
             <div className={`flex`}>
               <div
-                className={`h-[28px] w-[28px] bg-[#ff4c4c] ml-[230px]`}
+                className={`h-[28px] w-[28px] bg-[#ff7f7f] ml-[230px]`}
               ></div>
               <div className={`text-lg`}>・・・予約・授業</div>
               <div className={`h-[28px] w-[28px] bg-[#ffea7f] ml-[20px]`}></div>

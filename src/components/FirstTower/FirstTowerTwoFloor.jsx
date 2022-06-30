@@ -4,7 +4,7 @@ const FirstTowerTwoFloor = () => {
   return (
     <div className={`ml-[180px] w-[345px] h-[359px]`}>
       <div className={`flex-row mt-20 text-center`}>
-        <div className={`flex border-2 border-[#000]`}>
+        <div className={`flex border-2 border-black`}>
           <div className={`flex-col w-[90px]`}>
             <div
               className={`h-[160px] border-2 border-black mx-0.5 mt-0.5 text-center text-sm py-[30px] flex-col`}
