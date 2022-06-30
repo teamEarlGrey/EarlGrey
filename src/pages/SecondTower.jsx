@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import SecondTowerTwoFloor from "../components/SecondTower/SecondTowerTwoFloor";
 import SecondTowerThreeFloor from "../components/SecondTower/SecondTowerThreeFloor";
 import SecondTowerFourFloor from "../components/SecondTower/SecondTowerFourFloor";
-import ThirdTowerFloor from "../components/ThirdTower/ThirdTowerFloor";
 import SecondTowerFiveFloor from "../components/SecondTower/SecondTowerFiveFloor";
 import SecondTowerSixFloor from "../components/SecondTower/SecondTowerSixFloor";
 
@@ -34,7 +33,7 @@ const SecondTower = () => {
             {floor === 6 && <SecondTowerSixFloor />}
             <div className={`flex`}>
               <div
-                className={`h-[28px] w-[28px] bg-[#ff4c4c] ml-[190px]`}
+                className={`h-[28px] w-[28px] bg-[#ff7f7f] ml-[190px]`}
               ></div>
               <div className={`text-lg`}>・・・予約・授業</div>
               <div
