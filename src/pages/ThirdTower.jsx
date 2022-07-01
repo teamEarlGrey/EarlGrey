@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SecondTowerTwoFloor from "../components/SecondTower/SecondTowerTwoFloor";
-import SecondTowerThreeFloor from "../components/SecondTower/SecondTowerThreeFloor";
-import SecondTowerFourFloor from "../components/SecondTower/SecondTowerFourFloor";
-import ThirdTowerFloor from "../components/ThirdTower/ThirdTowerFloor";
+import ThirdTowerTwoFloor from "../components/ThirdTower/ThirdTowerTwoFloor";
+import ThirdTowerThreeFloor from "../components/ThirdTower/ThirdTowerThreeFloor";
+import ThirdTowerFourFloor from "../components/ThirdTower/ThirdTowerFourFloor";
+import ThirdTowerFiveFloor from "../components/ThirdTower/ThirdTowerFiveFloor";
+import ThirdTowerSixFloor from "../components/ThirdTower/ThirdTowerSixFloor";
+import ThirdTowerSevenFloor from "../components/ThirdTower/ThirdTowerSevenFloor";
 
 const ThirdTower = () => {
   const [floor, setFloor] = React.useState(2);
@@ -24,9 +26,22 @@ const ThirdTower = () => {
       </header>
       <div className={`flex flex-row`}>
         <div className={`w-1/2`}>
-          {floor === 2 && <ThirdTowerFloor />}
-          {floor === 3 && <SecondTowerThreeFloor />}
-          {floor === 4 && <SecondTowerFourFloor />}
+          {floor === 2 && <ThirdTowerTwoFloor />}
+          {floor === 3 && <ThirdTowerThreeFloor />}
+          {floor === 4 && <ThirdTowerFourFloor />}
+          {floor === 5 && <ThirdTowerFiveFloor />}
+          {floor === 6 && <ThirdTowerSixFloor />}
+          {floor === 7 && <ThirdTowerSevenFloor />}
+          <div className={`flex`}>
+              <div
+                className={`h-[28px] w-[28px] bg-[#ff7f7f] ml-[190px]`}
+              ></div>
+              <div className={`text-lg`}>・・・予約・授業</div>
+              <div
+                className={`h-[28px] w-[28px] bg-[#ffea7f] ml-[20px]`}
+              ></div>
+              <div className={`text-lg`}>・・・利用中</div>
+            </div>
         </div>
         <div className={`w-1/2`}>
           <div className={`w-[600px] relative `}>
@@ -36,6 +51,16 @@ const ThirdTower = () => {
               className={`absolute`}
             />
             <div className={`absolute w-[400px] mx-[105px] my-[118px]`}>
+              {/* 7階 */}
+              <div
+                className={`w-[400px] my-[8px] text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  floor === 7 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
+                }`}
+                onClick={() => setFloor((floor) => 7)}
+              >
+                7F
+              </div>
+
               {/* 6階 */}
               <div
                 className={`w-[400px] my-[8px] text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${

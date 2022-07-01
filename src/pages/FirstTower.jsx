@@ -5,6 +5,7 @@ import FirstTowerThreeFloor from "../components/FirstTower/FirstTowerThreeFloor"
 import FirstTowerTwoFloor from "../components/FirstTower/FirstTowerTwoFloor";
 
 const FirstTower = () => {
+  // floor：選択している階数を保持する変数（初期値：２）
   const [floor, setFloor] = React.useState(2);
   return (
     <>
