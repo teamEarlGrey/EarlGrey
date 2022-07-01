@@ -44,28 +44,22 @@ const TopPage = () => {
               className={`right-0 absolute w-[10px] h-full bg-gradient-to-l from-[#e9ebeb] to-[#F4F5F5]`}
             ></div>
             <div className="p-10 bg-[#F4F5F5] text-xl font-medium flex">
-              <Link to="first" className={`w-1/4`}>
+              <Link to="first" className={`w-1/3`}>
                 <div className={`flex-col`}>
-                  <img src="./images/FirstTower.png" alt="1号館" />
+                  <img src="./images/FirstTower.png" alt="1号館" className={`h-[400px] mx-autp`} />
                   <div className={`text-center mt-10`}>1号館</div>
                 </div>
               </Link>
-              <Link to="second" className={`w-1/4`}>
+              <Link to="second" className={`w-1/3`}>
                 <div className={`flex-col`}>
-                  <img src="./images/SecondTower.png" alt="2号館" />
+                  <img src="./images/SecondTower.png" alt="2号館" className={`h-[400px] ml-[50px] mt-[10px]`} />
                   <div className={`text-center mt-10`}>2号館</div>
                 </div>
               </Link>
-              <Link to="third" className={`w-1/4`}>
+              <Link to="third" className={`w-1/3`}>
                 <div className={`flex-col`}>
-                  <img src="./images/SecondTower.png" alt="3号館" />
+                  <img src="./images/ThirdTower.png" alt="3号館" className={`h-[400px] mx-auto  mt-[8px]`} />
                   <div className={`text-center mt-10`}>3号館</div>
-                </div>
-              </Link>
-              <Link to="fourth" className={`w-1/4`}>
-                <div className={`flex-col`}>
-                  <img src="./images/room4.png" alt="4号館" />
-                  <div className={`text-center mt-10`}>4号館</div>
                 </div>
               </Link>
             </div>
@@ -98,9 +92,6 @@ const TopPage = () => {
               </Link>
               <Link to="third" className={`w-1/4`}>
                 <img src="./images/setubi.png" alt="3号館" />
-              </Link>
-              <Link to="fourth" className={`w-1/4`}>
-                <img src="./images/setubi.png" alt="4号館" />
               </Link>
             </div>
           </div>

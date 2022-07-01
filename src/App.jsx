@@ -5,7 +5,6 @@ import TopPage from "./pages/TopPage";
 import FirstTower from "./pages/FirstTower";
 import SecondTower from "./pages/SecondTower";
 import ThirdTower from "./pages/ThirdTower";
-import FourthTower from "./pages/FourthTower";
 
 const App = () => {
   return (
@@ -16,7 +15,6 @@ const App = () => {
             <Route path="first" element={<FirstTower />} />
             <Route path="second" element={<SecondTower />} />
             <Route path="third" element={<ThirdTower />} />
-            <Route path="fourth" element={<FourthTower />} />
           </Routes>
         </div>
     </BrowserRouter>
