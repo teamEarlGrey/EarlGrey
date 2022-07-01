@@ -44,10 +44,10 @@ const ThirdTower = () => {
             </div>
         </div>
         <div className={`w-1/2`}>
-          <div className={`w-[600px] relative `}>
+          <div className={`h-[200px] relative `}>
             <img
-              src="./images/SecondTower/SecondTower_bg.png"
-              alt="2号館"
+              src="./images/ThirdTower1.png"
+              alt="3号館"
               className={`absolute`}
             />
             <div className={`absolute w-[400px] mx-[105px] my-[118px]`}>
