@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/*
+  wrapper
+*/
+
+div#wrapper{
+  width: 1300px;
+  margin: 0 auto;
+  height: auto;
+}
