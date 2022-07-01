@@ -15,11 +15,11 @@ const SecondTower = () => {
           <Link to="/" className="px-4">
             <img src="./images/logo.png" alt="KitAru" className={`h-8 px-3`} />
           </Link>
-          <a href="/#aki" className="px-4">
-            空き教室
+          <a href="/first" className="px-4">
+            1号館
           </a>
-          <a href="/#setubi" className="px-4">
-            設備
+          <a href="/third" className="px-4">
+            3号館
           </a>
         </div>
       </header>
