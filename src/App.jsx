@@ -1,4 +1,5 @@
 import React from "react";
+import useMedia from "use-media";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import TopPage from "./pages/TopPage";
@@ -7,9 +8,10 @@ import SecondTower from "./pages/SecondTower";
 import ThirdTower from "./pages/ThirdTower";
 
 const App = () => {
+  const isWide = useMedia({ minWidth: "1300px" });
   return (
     <BrowserRouter>
-        <div id="wrapper">
+        <div className={`${isWide ? `w-[1300px] mx-auto` : `w-auto`}`}>
           <Routes>
             <Route path="/" element={<TopPage />} />
             <Route path="first" element={<FirstTower />} />

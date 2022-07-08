@@ -15,10 +15,13 @@ const SecondTower = () => {
           <Link to="/" className="px-4">
             <img src="./images/logo.png" alt="KitAru" className={`h-8 px-3`} />
           </Link>
-          <a href="/first" className="px-4">
+          <a href="/first" className="mx-3 px-4 pt-0.5  rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition">
             1号館
           </a>
-          <a href="/third" className="px-4">
+          <a href="/second" className="mx-3 px-4 pt-0.5  rounded-lg bg-gray-300 border-b-2 border-gray-400">
+            2号館
+          </a>
+          <a href="/third" className="mx-3 px-4 pt-0.5 rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition ">
             3号館
           </a>
         </div>

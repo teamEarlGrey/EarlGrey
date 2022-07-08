@@ -1,7 +1,9 @@
 import React from "react";
+import useMedia from "use-media";
 import { Link } from "react-router-dom";
 
 const TopPage = () => {
+  const max1300 = useMedia({ maxWidth: "1300px" });
   return (
     <>
       <header className={`sticky z-50 top-0`}>
@@ -44,21 +46,21 @@ const TopPage = () => {
               className={`right-0 absolute w-[10px] h-full bg-gradient-to-l from-[#e9ebeb] to-[#F4F5F5]`}
             ></div>
             <div className="p-10 bg-[#F4F5F5] text-xl font-medium flex">
-              <Link to="first" className={`w-1/3`}>
+              <Link to="first" className={`h-30% w-33% mx-5`}>
                 <div className={`flex-col`}>
-                  <img src="./images/FirstTower.png" alt="1号館" className={`h-[400px] mx-autp`} />
+                  <img src="./images/FirstTower.png" alt="1号館" className={``} />
                   <div className={`text-center mt-10`}>1号館</div>
                 </div>
               </Link>
-              <Link to="second" className={`w-1/3`}>
+              <Link to="second" className={`h-30% w-33% mx-5`}>
                 <div className={`flex-col`}>
-                  <img src="./images/SecondTower.png" alt="2号館" className={`h-[400px] ml-[50px] mt-[10px]`} />
+                  <img src="./images/SecondTower.png" alt="2号館" className={``} />
                   <div className={`text-center mt-10`}>2号館</div>
                 </div>
               </Link>
-              <Link to="third" className={`w-1/3`}>
+              <Link to="third" className={`h-30% w-33% mx-5`}>
                 <div className={`flex-col`}>
-                  <img src="./images/ThirdTower.png" alt="3号館" className={`h-[400px] mx-auto  mt-[8px]`} />
+                  <img src="./images/ThirdTower.png" alt="3号館" className="" />
                   <div className={`text-center mt-10`}>3号館</div>
                 </div>
               </Link>
