@@ -16,11 +16,14 @@ const ThirdTower = () => {
           <Link to="/" className="px-4">
             <img src="./images/logo.png" alt="KitAru" className={`h-8 px-3`} />
           </Link>
-          <a href="/first" className="px-4">
+          <a href="/first" className="mx-3 px-4 pt-0.5  rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition">
             1号館
           </a>
-          <a href="/second" className="px-4">
+          <a href="/second" className="mx-3 px-4 pt-0.5  rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition">
             2号館
+          </a>
+          <a href="/third" className="mx-3 px-4 pt-0.5 rounded-lg bg-gray-300 border-b-2 border-gray-400">
+            3号館
           </a>
         </div>
       </header>
@@ -44,16 +47,16 @@ const ThirdTower = () => {
             </div>
         </div>
         <div className={`w-1/2`}>
-          <div className={`h-[200px] relative `}>
+          <div className={`w-[400px] relative`}>
             <img
-              src="./images/ThirdTower1.png"
+              src="./images/ThirdTower_bg.png"
               alt="3号館"
-              className={`absolute`}
+              className={`absolute pt-[20px] ml-[40px]`}
             />
-            <div className={`absolute w-[400px] mx-[105px] my-[118px]`}>
+            <div className={`absolute w-[400px] mx-[55px] my-[30px]`}>
               {/* 7階 */}
               <div
-                className={`w-[400px] my-[8px] text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                className={`w-[370px] my-[6px] z-10 text-5xl bg-[#ffffff] font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
                   floor === 7 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
                 }`}
                 onClick={() => setFloor((floor) => 7)}
@@ -63,7 +66,7 @@ const ThirdTower = () => {
 
               {/* 6階 */}
               <div
-                className={`w-[400px] my-[8px] text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                className={`w-[370px] my-[6px] z-10 text-5xl bg-[#ffffff] font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
                   floor === 6 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
                 }`}
                 onClick={() => setFloor((floor) => 6)}
@@ -73,7 +76,7 @@ const ThirdTower = () => {
 
               {/* 5階 */}
               <div
-                className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                className={`w-[370px] my-[6px] z-10 text-5xl bg-[#ffffff] font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
                   floor === 5 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
                 }`}
                 onClick={() => setFloor((floor) => 5)}
@@ -83,7 +86,7 @@ const ThirdTower = () => {
 
               {/* 4階 */}
               <div
-                className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                className={`w-[370px] my-[6px] z-10 text-5xl bg-[#ffffff] font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
                   floor === 4 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
                 }`}
                 onClick={() => setFloor((floor) => 4)}
@@ -93,7 +96,7 @@ const ThirdTower = () => {
 
               {/* ３階 */}
               <div
-                className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                className={`w-[370px] my-[6px] z-10 text-5xl bg-[#ffffff] font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
                   floor === 3 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
                 }`}
                 onClick={() => setFloor((floor) => 3)}
@@ -103,7 +106,7 @@ const ThirdTower = () => {
 
               {/* 2階 */}
               <div
-                className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                className={`w-[370px] my-[6px] z-10 text-5xl bg-[#ffffff] font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
                   floor === 2 ? `bg-[#38D1F0] text-[#fff]` : `hover:bg-gray-300`
                 }`}
                 onClick={() => setFloor((floor) => 2)}
