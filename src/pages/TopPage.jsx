@@ -13,7 +13,10 @@ const TopPage = () => {
             max750 ? `p-3` : `p-3`
           } border-b-2 text-xl font-medium flex bg-white `}
         >
-          <a href="http://localhost:3000/" className={`${max750 ? `w-1/5` : `w-[150px]`}`}>
+          <a
+            href="http://localhost:3000/"
+            className={`${max750 ? `w-1/5` : `w-[150px]`}`}
+          >
             <img src="./images/logo.png" alt="KitAru" className={`px-3`} />
           </a>
           {max750 ? (
@@ -70,10 +73,7 @@ const TopPage = () => {
             >
               <Link to="first" className={`h-30% w-33% mx-5`}>
                 <div className={`flex-col`}>
-                  <img
-                    src="./images/FirstTower.png"
-                    alt="1号館"
-                  />
+                  <img src="./images/FirstTower.png" alt="1号館" />
                   <div className={`text-center ${max1300 ? `my-2` : `mt-10`}`}>
                     1号館
                   </div>
@@ -81,10 +81,7 @@ const TopPage = () => {
               </Link>
               <Link to="second" className={`h-30% mx-5`}>
                 <div className={`flex-col`}>
-                  <img
-                    src="./images/SecondTower.png"
-                    alt="2号館"
-                  />
+                  <img src="./images/SecondTower.png" alt="2号館" />
                   <div className={`text-center ${max1300 ? `my-2` : `mt-10`}`}>
                     2号館
                   </div>
@@ -119,16 +116,35 @@ const TopPage = () => {
             <div
               className={`right-0 absolute w-[10px] h-full bg-gradient-to-l from-[#e9ebeb] to-[#F4F5F5]`}
             ></div>
-            <div className="p-10 bg-[#F4F5F5] text-xl font-medium flex">
-              <Link to="first" className={`w-1/4`}>
-                <img src="./images/setubi.png" alt="1号館" />
-              </Link>
-              <Link to="second" className={`w-1/4`}>
-                <img src="./images/setubi.png" alt="2号館" />
-              </Link>
-              <Link to="third" className={`w-1/4`}>
-                <img src="./images/setubi.png" alt="3号館" />
-              </Link>
+            <div
+              className={`${
+                max750 ? `px-1` : `p-5`
+              } bg-[#F4F5F5] text-xl font-medium flex justify-between flex-wrap`}
+            >
+              {/* ブラウザサイズが750pxより小さい時 */}
+              {max750 ? <div></div>
+              : <></>}
+              {/* ブラウザサイズが750pxより大きい時 */}
+              <img
+                src="./images/setubi.png"
+                alt="1号館"
+                className={`${max750 ? `w-1/2 p-2` : `w-[300px] p-4`}`}
+              />
+              <img
+                src="./images/setubi.png"
+                alt="2号館"
+                className={`${max750 ? `w-1/2 p-2` : `w-[300px] p-4`}`}
+              />
+              <img
+                src="./images/setubi.png"
+                alt="3号館"
+                className={`${max750 ? `w-1/2 p-2` : `w-[300px] p-4`}`}
+              />
+              <img
+                src="./images/setubi.png"
+                alt="3号館"
+                className={`${max750 ? `w-1/2 p-2` : `w-[300px] p-4`}`}
+              />
             </div>
           </div>
           <div
