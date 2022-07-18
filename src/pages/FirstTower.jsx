@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import useMedia from "use-media";
 import FirstTowerFourFloor from "../components/FirstTower/FirstTowerFourFloor";
 import FirstTowerThreeFloor from "../components/FirstTower/FirstTowerThreeFloor";
@@ -61,13 +60,6 @@ const FirstTower = () => {
               {floor === 2 && <FirstTowerTwoFloor />}
               {floor === 3 && <FirstTowerThreeFloor />}
               {floor === 4 && <FirstTowerFourFloor />}
-              <div className={`pb-7`}>
-                <img
-                  className={`w-[90px] ml-[90px]`}
-                  src="./images/FirstTower_stairs.png"
-                  alt="階段"
-                />
-              </div>
               <div className={`flex`}>
                 <div
                   className={`h-[28px] w-[28px] bg-[#ff7f7f] ml-[60px]`}
