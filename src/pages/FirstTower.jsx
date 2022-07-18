@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import useMedia from "use-media";
 import FirstTowerFourFloor from "../components/FirstTower/FirstTowerFourFloor";
 import FirstTowerThreeFloor from "../components/FirstTower/FirstTowerThreeFloor";
 import FirstTowerTwoFloor from "../components/FirstTower/FirstTowerTwoFloor";
@@ -7,6 +8,7 @@ import FirstTowerTwoFloor from "../components/FirstTower/FirstTowerTwoFloor";
 const FirstTower = () => {
   // floor：選択している階数を保持する変数（初期値：２）
   const [floor, setFloor] = React.useState(2);
+  const max800 = useMedia({ maxWidth: "800px" });
   return (
     <>
       <header>
@@ -62,7 +64,7 @@ const FirstTower = () => {
           <div className={`absolute w-4/5`}>
             {/* 4階 */}
             <div
-              className={`my-[30px] text-5xl font-bold rounded-xl border-2 text-center ${
+              className={`${max800 ? `my-[20px] text-4xl` : `my-[30px] text-5xl`} font-bold rounded-xl border-2 text-center ${
                 floor === 4
                   ? `bg-[#ffffff] text-[#f4896e] border-white`
                   : `bg-[#f4896e] text-[#ffffff] hover:bg-[#f7a79b]`
@@ -74,7 +76,7 @@ const FirstTower = () => {
 
             {/* ３階 */}
             <div
-              className={`my-[30px] z-10 text-5xl font-bold rounded-xl border-2 text-center ${
+              className={`${max800 ? `my-[20px] text-4xl` : `my-[30px] text-5xl`} font-bold rounded-xl border-2 text-center ${
                 floor === 3
                   ? `bg-[#ffffff] text-[#f4896e] border-white`
                   : `bg-[#f4896e] text-[#ffffff] hover:bg-[#f7a79b]`
@@ -86,7 +88,7 @@ const FirstTower = () => {
 
             {/* 2階 */}
             <div
-              className={`my-[30px] z-10 text-5xl font-bold rounded-xl  text-center border-2 border-white ${
+              className={`${max800 ? `my-[20px] text-4xl` : `my-[30px] text-5xl`} font-bold rounded-xl  text-center border-2 border-white ${
                 floor === 2
                   ? `bg-[#ffffff] text-[#f4896e] border-white`
                   : `bg-[#f4896e] text-[#ffffff] hover:bg-[#f7a79b]`
