@@ -2,7 +2,7 @@ import React from "react";
 
 const ThirdTowerFourFloor = () => {
   return (
-    <div className={`ml-[150px] h-[300px]`}>
+    <div className={`h-100% mb-7`}>
       <div className={`flex-row mt-[100px] text-center`}>
         <div className={`w-[390px] h-[274px] border-2 border-black`}>
           <div className={`flex flex-row h-[90px] `}>
