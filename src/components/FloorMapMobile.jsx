@@ -255,7 +255,7 @@ const FloorMapMobile = (props) => {
           </div>
         </div>
       </div>
-      <div className={`flex place-content-center`}>
+      <div className={`flex place-content-center mt-10`}>
         {floor === "12" && <FirstTowerTwoFloor />}
         {floor === "13" && <FirstTowerThreeFloor />}
         {floor === "14" && <FirstTowerFourFloor />}
@@ -270,6 +270,19 @@ const FloorMapMobile = (props) => {
         {floor === "35" && <ThirdTowerFiveFloor />}
         {floor === "36" && <ThirdTowerSixFloor />}
         {floor === "37" && <ThirdTowerSevenFloor />}
+      </div>
+      <div className={`flex mb-10`}>
+        <div className={`h-[28px] w-[28px] bg-[#ff7f7f] ml-[60px]`}></div>
+        <div className={`text-lg`}>・・・予約・授業</div>
+        <div className={`h-[28px] w-[28px] bg-[#ffea7f] ml-[20px]`}></div>
+        <div className={`text-lg`}>・・・利用中</div>
+      </div>
+      <div className={` mb-10 flex place-content-center`}>
+        <div
+          className={`text-[#FF8093] text-2xl font-bold border-b-2 border-[#FF8093]`}
+        >
+          {tower}号館の予約一覧
+        </div>
       </div>
     </>
   );
