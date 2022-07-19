@@ -27,13 +27,13 @@ const SecondTower = () => {
             <>
               <a
                 href="/first"
-                className="mx-3 px-4 pt-0.5  rounded-lg bg-gray-300 border-b-2 border-gray-400"
+                className="mx-3 px-4 pt-0.5  rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition"
               >
                 1号館
               </a>
               <a
                 href="/second"
-                className="mx-3 px-4 pt-0.5  rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition"
+                className="mx-3 px-4 pt-0.5  rounded-lg bg-gray-300 border-b-2 border-gray-400"
               >
                 2号館
               </a>
@@ -53,7 +53,7 @@ const SecondTower = () => {
         // mobileの時
         <>
           <div className={`flex flex-row justify-around`}>
-            <div className={`flex-col`}>
+            <div className={`flex-col mt-20`}>
               {floor === 2 && <SecondTowerTwoFloor />}
               {floor === 3 && <SecondTowerThreeFloor />}
               {floor === 4 && <SecondTowerFourFloor />}
@@ -68,6 +68,13 @@ const SecondTower = () => {
                   className={`h-[28px] w-[28px] bg-[#ffea7f] ml-[20px]`}
                 ></div>
                 <div className={`text-lg`}>・・・利用中</div>
+              </div>
+              <div className={` mt-8 flex place-content-center`}>
+                <div
+                  className={`text-[#FF8093] text-2xl font-bold border-b-2 border-[#FF8093]`}
+                >
+                  ２号館の予約一覧
+                </div>
               </div>
             </div>
             <div className={`w-[600px] relative `}>

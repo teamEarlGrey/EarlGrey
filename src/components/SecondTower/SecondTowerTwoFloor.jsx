@@ -2,8 +2,8 @@ import React from "react";
 
 const SecondTowerTwoFloor = () => {
   return (
-    <div className={`w-[360px] h-100% pb-7`}>
-      <div className={`flex flex-row mt-20 text-center`}>
+    <div className={`w-[360px] h-100% pb-3`}>
+      <div className={`flex flex-row text-center`}>
         <div
           className={`flex flex-row w-[280px] border-y-2 border-l-2 border-black`}
         >
