@@ -19,7 +19,7 @@ const FirstTower = () => {
           } border-b-2 text-xl font-medium flex bg-white `}
         >
           <a
-            href="http://localhost:3000/"
+            href="/"
             className={`${max750 ? `w-1/5` : `w-[150px]`}`}
           >
             <img src="./images/logo.png" alt="KitAru" className={`px-3`} />
