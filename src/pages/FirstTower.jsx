@@ -56,7 +56,7 @@ const FirstTower = () => {
         // mobileの時
         <>
           <div className={`flex flex-row justify-around`}>
-            <div className={`flex-col`}>
+            <div className={`flex-col　mt-20`}>
               {floor === 2 && <FirstTowerTwoFloor />}
               {floor === 3 && <FirstTowerThreeFloor />}
               {floor === 4 && <FirstTowerFourFloor />}

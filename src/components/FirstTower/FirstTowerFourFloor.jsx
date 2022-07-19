@@ -4,7 +4,7 @@ const FirstTowerFourFloor = () => {
   return (
     <div>
       <div className={` w-[345px] h-100%`}>
-        <div className={`flex-row mt-20 text-center`}>
+        <div className={`flex-row text-center`}>
           <div className={`flex justify-between border-2 border-black`}>
             <div className={`flex-col w-[100px]`}>
               <div
@@ -60,7 +60,7 @@ const FirstTowerFourFloor = () => {
           </div>
         </div>
       </div>
-      <div className={`pb-7`}>
+      <div className={`pb-3`}>
         <img
           className={`w-[90px] ml-[90px]`}
           src="./images/FirstTower_stairs.png"
