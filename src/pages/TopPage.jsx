@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import useMedia from "use-media";
 import { Link } from "react-router-dom";
 
