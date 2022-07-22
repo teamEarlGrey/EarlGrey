@@ -235,31 +235,54 @@ const TopPage = () => {
             <div
               className={`${
                 max750 ? `px-1` : `p-5`
-              } bg-[#F4F5F5] text-xl font-medium flex justify-between flex-wrap`}
+              } bg-[#F4F5F5] text-3xl font-bold flex flex-col`}
             >
-              {/* ブラウザサイズが750pxより小さい時 */}
-              {max750 ? <div></div> : <></>}
-              {/* ブラウザサイズが750pxより大きい時 */}
-              <img
-                src="./images/setubi.png"
-                alt="1号館"
-                className={`${max750 ? `w-1/2 p-2` : `w-[300px] p-4`}`}
-              />
-              <img
-                src="./images/setubi.png"
-                alt="2号館"
-                className={`${max750 ? `w-1/2 p-2` : `w-[300px] p-4`}`}
-              />
-              <img
-                src="./images/setubi.png"
-                alt="3号館"
-                className={`${max750 ? `w-1/2 p-2` : `w-[300px] p-4`}`}
-              />
-              <img
-                src="./images/setubi.png"
-                alt="3号館"
-                className={`${max750 ? `w-1/2 p-2` : `w-[300px] p-4`}`}
-              />
+              <div className={`text-[#7FD4FF] font-bold text-4xl pl-4 pb-3`}>
+                １号館
+              </div>
+              <div className={`flex justify-between flex-wrap`}>
+                <div
+                  className={`flex flex-col ${
+                    max750 ? `w-1/2 p-2` : `w-[300px] p-4`
+                  }`}
+                >
+                  <img src="./images/1206.png" alt="1号館" />
+                  <div className={`text-center`}>1206 1309</div>
+                </div>
+
+                <div
+                  className={`flex flex-col ${
+                    max750 ? `w-1/2 p-2` : `w-[300px] p-4`
+                  }`}
+                >
+                  <img src="./images/1301.png" alt="1号館" />
+                  <div className={`text-center`}>1301 1302</div>
+                  <div className={`text-center`}>1303 1304</div>
+                </div>
+                <div
+                  className={`flex flex-col ${
+                    max750 ? `w-1/2 p-2` : `w-[300px] p-4`
+                  }`}
+                >
+                  <img src="./images/1305.png" alt="1号館" />
+                  <div className={`text-center`}>1305 1306</div>
+                  <div className={`text-center`}>1307 1308</div>
+                </div>
+              </div>
+
+              <div className={`text-[#7FD4FF] font-bold text-4xl pl-4 py-4`}>
+                ２号館
+              </div>
+              <div className={`flex justify-between flex-wrap`}>
+                <div
+                  className={`flex flex-col ${
+                    max750 ? `w-1/2 p-2` : `w-[300px] p-4`
+                  }`}
+                >
+                  <img src="./images/1206.png" alt="1号館" />
+                  <div className={`text-center`}>1206 1309</div>
+                </div>
+              </div>
             </div>
           </div>
           <div
