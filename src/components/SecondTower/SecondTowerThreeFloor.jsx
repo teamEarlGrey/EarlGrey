@@ -1,15 +1,18 @@
 import React from "react";
+import Load from "../Load";
 
 const SecondTowerThreeFloor = () => {
   return (
-    <div className={`ml-[150px] w-[360px] h-[400px]`}>
-      <div className={`flex-row mt-20 text-center relative`}>
+    <div className={`w-[360px] h-100% pb-3`}>
+      <Load room="2300" />
+      <div className={`flex flex-row text-center`}>
         {/*  */}
         <div
-          className={`flex w-[280px] border-y-2 border-l-2 border-black absolute`}
+          className={`flex flex-row w-[280px] border-y-2 border-l-2 border-black`}
         >
           <div className={`flex-col `}>
             <div
+              id="2302"
               className={`w-[120px] h-[122px] border-2 border-black mt-0.5 ml-0.5 px-1 py-[32px]`}
             >
               <div>2302</div>
@@ -17,6 +20,7 @@ const SecondTowerThreeFloor = () => {
               <div>対応教室</div>
             </div>
             <div
+              id="2303"
               className={`w-[120px] h-[122px] border-x-2 border-black ml-0.5 px-1 py-[32px]`}
             >
               <div>2303</div>
@@ -24,6 +28,7 @@ const SecondTowerThreeFloor = () => {
               <div>対応教室</div>
             </div>
             <div
+              id="powder_room"
               className={`w-[120px] h-[116px] border-2 border-black mb-0.5 mx-0.5 px-1 py-[32px]`}
             >
               女子学生専用パウダールーム
@@ -32,12 +37,14 @@ const SecondTowerThreeFloor = () => {
           <div className={`flex-col`}>
             <div className={`w-[40px] h-[240px] m-0.5 px-2 py-1`}></div>
             <div
+              id="library"
               className={`w-[153px] h-[116px] border-2 border-black my-0.5 absolute py-[45px]`}
             >
               図書室
             </div>
           </div>
           <div
+            id="2301"
             className={`w-[120px] h-[220px] border-2 border-black m-0.5 px-2 py-[70px]`}
           >
             <div>2301</div>
@@ -45,7 +52,7 @@ const SecondTowerThreeFloor = () => {
             <div>対応教室</div>
           </div>
         </div>
-        <div className={`flex-col absolute right-0`}>
+        <div className={`flex-col`}>
           <div
             className={`w-[80px] h-[120px] border-l-2 border-b-2 border-black px-2`}
           ></div>
