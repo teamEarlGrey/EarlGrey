@@ -10,6 +10,7 @@ import FloorMapMobile from "../components/FloorMapMobile";
 const SecondTower = () => {
   const [floor, setFloor] = React.useState(2);
   const max750 = useMedia({ maxWidth: "750px" });
+  const max800 = useMedia({ maxWidth: "800px" });
   return (
     <>
       <header className={`sticky z-50 top-0`}>
@@ -77,16 +78,17 @@ const SecondTower = () => {
                 </div>
               </div>
             </div>
-            <div className={`w-[600px] relative `}>
+            <div className={`w-[425px] h-auto relative flex place-items-end justify-center `}>
               <img
                 src="./images/SecondTower_bg.png"
                 alt="2号館"
-                className={`absolute`}
               />
-              <div className={`absolute w-[400px] mx-[105px] my-[118px]`}>
+              <div className={`absolute w-5/6 mb-[155px]`}>
                 {/* 6階 */}
                 <div
-                  className={`w-[400px] my-[8px] text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  className={`${
+                    max800 ? `my-[10px] text-4xl` : `my-[7px] text-5xl`
+                  } font-bold rounded-xl border-2 text-center text-[#38D1F0] border-black ${
                     floor === 6
                       ? `bg-[#38D1F0] text-[#fff]`
                       : `hover:bg-gray-300`
@@ -98,7 +100,9 @@ const SecondTower = () => {
 
                 {/* 5階 */}
                 <div
-                  className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  className={`${
+                    max800 ? `my-[10px] text-4xl` : `my-[7px] text-5xl`
+                  } font-bold rounded-xl border-2 text-center text-[#38D1F0] border-black ${
                     floor === 5
                       ? `bg-[#38D1F0] text-[#fff]`
                       : `hover:bg-gray-300`
@@ -110,7 +114,9 @@ const SecondTower = () => {
 
                 {/* 4階 */}
                 <div
-                  className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  className={`${
+                    max800 ? `my-[10px] text-4xl` : `my-[7px] text-5xl`
+                  } font-bold rounded-xl border-2 text-center text-[#38D1F0] border-black ${
                     floor === 4
                       ? `bg-[#38D1F0] text-[#fff]`
                       : `hover:bg-gray-300`
@@ -122,7 +128,9 @@ const SecondTower = () => {
 
                 {/* ３階 */}
                 <div
-                  className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  className={`${
+                    max800 ? `my-[10px] text-4xl` : `my-[7px] text-5xl`
+                  } font-bold rounded-xl border-2 text-center text-[#38D1F0] border-black ${
                     floor === 3
                       ? `bg-[#38D1F0] text-[#fff]`
                       : `hover:bg-gray-300`
@@ -134,7 +142,9 @@ const SecondTower = () => {
 
                 {/* 2階 */}
                 <div
-                  className={`w-[400px] my-[8px] z-10 text-5xl font-bold text-[#38D1F0] rounded-xl border-2 text-center border-black ${
+                  className={`${
+                    max800 ? `my-[10px] text-4xl` : `my-[7px] text-5xl`
+                  } font-bold rounded-xl border-2 text-center text-[#38D1F0] border-black ${
                     floor === 2
                       ? `bg-[#38D1F0] text-[#fff]`
                       : `hover:bg-gray-300`
