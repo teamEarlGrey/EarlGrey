@@ -70,6 +70,13 @@ const FirstTower = () => {
                 ></div>
                 <div className={`text-lg`}>・・・利用中</div>
               </div>
+              <div className={` mt-8 flex place-content-center`}>
+                <div
+                  className={`text-[#FF8093] text-2xl font-bold border-b-2 border-[#FF8093]`}
+                >
+                  １号館の予約一覧
+                </div>
+              </div>
             </div>
             <div
               className={`w-[510px] h-auto mt-[20px] relative flex place-items-end justify-center`}
