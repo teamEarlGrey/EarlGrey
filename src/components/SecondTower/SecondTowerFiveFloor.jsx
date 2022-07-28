@@ -2,11 +2,11 @@ import React from "react";
 
 const SecondTowerFiveFloor = () => {
   return (
-    <div className={`ml-[150px] w-[360px] h-[400px]`}>
-      <div className={`flex-row mt-20 text-center relative`}>
+    <div className={`w-[360px] h-100% pb-3`}>
+      <div className={`flex flex-row text-center`}>
         {/*  */}
         <div
-          className={`flex w-[280px] border-y-2 border-l-2 border-black absolute`}
+          className={`flex flex-row w-[280px] border-y-2 border-l-2 border-black`}
         >
           <div className={`flex-col `}>
             <div
@@ -50,7 +50,7 @@ const SecondTowerFiveFloor = () => {
             <div>対応教室</div>
           </div>
         </div>
-        <div className={`flex-col absolute right-0`}>
+        <div className={`flex-col`}>
           <div
             className={`w-[80px] h-[120px] border-l-2 border-b-2 border-black px-2`}
           ></div>

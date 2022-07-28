@@ -7,5 +7,15 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        ".text-shadow": {
+          textShadow: "1px 1px #77a7bf, -1px 1px #77a7bf,1px -1px #77a7bf,-1px -1px #77a7bf,1px 0px #77a7bf,0px 1px #77a7bf, -1px 0px #77a7bf,0px -1px #77a7bf;"
+        }
+      };
+
+      addUtilities(newUtilities);
+    }
+  ]
+};
