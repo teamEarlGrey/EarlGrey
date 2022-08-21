@@ -1,8 +1,10 @@
 import React from "react";
+import Load from "../Load";
 
 const SecondTowerFiveFloor = () => {
   return (
     <div className={`w-[360px] h-100% pb-3`}>
+      <Load room="2500" />
       <div className={`flex flex-row text-center`}>
         {/*  */}
         <div
@@ -10,6 +12,7 @@ const SecondTowerFiveFloor = () => {
         >
           <div className={`flex-col `}>
             <div
+              id="2503"
               className={`w-[120px] h-[115px] border-2 border-black mt-0.5 ml-0.5 py-[5px] flex-col`}
             >
               <div>2503</div>
@@ -18,6 +21,7 @@ const SecondTowerFiveFloor = () => {
               <div>対応教室）</div>
             </div>
             <div
+              id="2504"
               className={`w-[120px] h-[115px] border-x-2 border-black ml-0.5 py-[5px] flex-col`}
             >
               <div>2504</div>
@@ -26,6 +30,7 @@ const SecondTowerFiveFloor = () => {
               <div>対応教室）</div>
             </div>
             <div
+              id="2505"
               className={`w-[120px] h-[130px] border-2 border-black mb-0.5 ml-0.5 px-2 py-[32px]`}
             >
               <div>2505</div>
@@ -36,6 +41,7 @@ const SecondTowerFiveFloor = () => {
           <div className={`flex-col`}>
             <div className={`w-[40px] h-[240px] m-0.5 px-2 py-1`}></div>
             <div
+              id="2502"
               className={`w-[153px] h-[116px] border-2 border-black m-0.5 absolute py-[25px]`}
             >
               <div>2502</div>
@@ -43,6 +49,7 @@ const SecondTowerFiveFloor = () => {
             </div>
           </div>
           <div
+            id="2501"
             className={`w-[120px] h-[220px] border-2 border-black m-0.5 px-2 py-[70px]`}
           >
             <div>2501</div>

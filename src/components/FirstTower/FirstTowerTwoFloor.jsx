@@ -1,9 +1,11 @@
 import React from "react";
+import Load from "../Load";
 
 const FirstTowerTwoFloor = () => {
   return (
     <div className={`flex flex-col`}>
       <div className={`w-[345px] h-100%`}>
+        <Load room="1200" />
         <div className={`flex-row text-center`}>
           <div className={`flex border-2 border-black`}>
             <div className={`flex-col w-[90px]`}>
@@ -17,6 +19,7 @@ const FirstTowerTwoFloor = () => {
                 <div>センター</div>
               </div>
               <div
+                id="1204"
                 className={`h-[96px] border-x-2 border-black mx-0.5 py-[10px] flex-col`}
               >
                 <div>1204</div>
@@ -24,6 +27,7 @@ const FirstTowerTwoFloor = () => {
                 <div>対応教室</div>
               </div>
               <div
+                id="1205"
                 className={`h-[96px] border-2 border-black mx-0.5 mb-0.5 py-[10px] flex-col`}
               >
                 <div>1205</div>
@@ -43,6 +47,7 @@ const FirstTowerTwoFloor = () => {
                 </div>
               </div>
               <div
+                id="1206"
                 className={`w-[90px] h-[90px] mx-auto border-2 border-black mt-[40px] py-[5px] flex-col`}
               >
                 <div>1206</div>
@@ -52,6 +57,7 @@ const FirstTowerTwoFloor = () => {
             </div>
             <div className={`flex-col w-[90px]`}>
               <div
+                id="1201"
                 className={`h-[117px] border-2 border-black mx-0.5 mt-0.5 py-[20px] flex-col`}
               >
                 <div>1201</div>
@@ -59,6 +65,7 @@ const FirstTowerTwoFloor = () => {
                 <div>対応教室</div>
               </div>
               <div
+                id="1202"
                 className={`h-[117px] border-x-2 border-black mx-0.5 py-[20px] flex-col`}
               >
                 <div>1202</div>
@@ -66,6 +73,7 @@ const FirstTowerTwoFloor = () => {
                 <div>対応教室</div>
               </div>
               <div
+                id="1203"
                 className={`h-[117px] border-2 border-black mx-0.5 mb-0.5 py-[20px] flex-col`}
               >
                 <div>1203</div>
