@@ -1,8 +1,10 @@
 import React from "react";
+import Load from "../Load";
 
 const ThirdTowerSixFloor = () => {
   return (
     <div className={`h-100% mb-3`}>
+      <Load room="3600" />
       <div className={`flex-row text-center`}>
         <div className={`w-[390px] h-[274px] border-2 border-black`}>
           <div className={`flex flex-row h-[90px] `}>
@@ -35,11 +37,11 @@ const ThirdTowerSixFloor = () => {
             </div>
           </div>
           <div className={`flex flex-row align-middle h-[180px]`}>
-            <div className={`w-[195px]  border-2 border-black m-0.5 py-[60px]`}>
+            <div id="3601" className={`w-[195px]  border-2 border-black m-0.5 py-[60px]`}>
               <div>3601</div>
               <div>実習室</div>
             </div>
-            <div className={`w-[195px] border-2 border-black m-0.5 py-[60px]`}>
+            <div id="3602" className={`w-[195px] border-2 border-black m-0.5 py-[60px]`}>
               <div>3602</div>
               <div>実習室</div>
             </div>

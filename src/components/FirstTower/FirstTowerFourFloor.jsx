@@ -1,13 +1,16 @@
 import React from "react";
+import Load from "../Load";
 
 const FirstTowerFourFloor = () => {
   return (
     <div>
       <div className={` w-[345px] h-100%`}>
+        <Load room="1400" />
         <div className={`flex-row text-center`}>
           <div className={`flex justify-between border-2 border-black`}>
             <div className={`flex-col w-[100px]`}>
               <div
+                id="1403"
                 className={`h-[117px] border-2 border-black mx-0.5 mt-0.5 py-[15px] flex-col`}
               >
                 <div>1403</div>
@@ -15,6 +18,7 @@ const FirstTowerFourFloor = () => {
                 <div>対応教室</div>
               </div>
               <div
+                id="1404"
                 className={`h-[117px] border-x-2 border-black mx-0.5 py-[15px] flex-col`}
               >
                 <div>1404</div>
@@ -22,6 +26,7 @@ const FirstTowerFourFloor = () => {
                 <div>対応教室</div>
               </div>
               <div
+                id="1405"
                 className={`h-[117px] border-2 border-black mx-0.5 mb-0.5 py-[15px] flex-col`}
               >
                 <div>1405</div>
@@ -31,11 +36,13 @@ const FirstTowerFourFloor = () => {
             </div>
             <div className={`flex-col w-[190px]`}>
               <div
+                id="1401"
                 className={`h-[125px] mx-0.5 border-x-2 border-t-2 border-black py-[45px]`}
               >
                 1401実習室
               </div>
               <div
+                id="1402"
                 className={`h-[125px] mx-0.5 border-2 border-black py-[45px]`}
               >
                 1402実習室
