@@ -18,19 +18,14 @@ const TopPage = () => {
   return (
     <>
       <header className={`sticky z-50 top-0`}>
-        <div
-          className={`p-2 border-b-2 text-xl font-medium flex bg-white ${
-            max750 && `justify-between`
-          } `}
-        >
-          <a
-            href="http://localhost:3000/"
-            className={`${max750 ? `w-1/5` : `w-[150px]`}`}
-          >
-            <img src="./images/logo.png" alt="KitAru" className={`px-3`} />
-          </a>
-          {max750 ? (
-            <div className="">
+        {max750 ? (
+          <div>
+            <div
+              className={`p-2 border-b-2 text-xl font-medium flex bg-white justify-between`}
+            >
+              <a href="http://localhost:3000/" className={`w-1/5`}>
+                <img src="./images/logo.png" alt="KitAru" className={`px-3`} />
+              </a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className={`h-6 w-6 text-[#7FD4FF] flex justify-end`}
@@ -45,17 +40,40 @@ const TopPage = () => {
                 />
               </svg>
             </div>
-          ) : (
-            <>
-              <a href="#aki" className="px-4 py-2">
-                空き教室
-              </a>
-              <a href="#setubi" className="px-4 py-2">
-                設備
-              </a>
-            </>
-          )}
-        </div>
+          </div>
+        ) : (
+          <>
+            <div
+              className={`p-3 border-b-2 text-xl font-medium flex bg-white justify-between`}
+            >
+              <div className={`flex`}>
+                <a href="http://localhost:3000/" className={`w-[150px]`}>
+                  <img
+                    src="./images/logo.png"
+                    alt="KitAru"
+                    className={`px-3`}
+                  />
+                </a>
+                <a href="#aki" className="px-4 pt-1 mt-1 mx-3 rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition">
+                  空き教室
+                </a>
+                <a href="#setubi" className="px-4 pt-1 mt-1 mx-3 rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition">
+                  設備
+                </a>
+              </div>
+              <Link to="reserve">
+                <div className={`flex mx-2 px-2 rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition`}>
+                  <img
+                    src="./images/reserve_page.png"
+                    alt="職員ページ"
+                    className={`w-9 h-9`}
+                  />
+                </div>
+              </Link>
+            </div>
+          </>
+        )}
+        {/* </div> */}
         {/* ハンバーガーメニュー */}
         {openMenu && (
           <div
