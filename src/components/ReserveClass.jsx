@@ -183,7 +183,7 @@ const ReserveClass = (props) => {
               </div>
               <div className={`flex flex-row-reverse`}>
                 <div
-                  className={`flex m-2 w-[50px] px-2 rounded-lg hover:translate-y-0.5 hover:bg-gray-200 border-2 border-gray-300 transform transition`}
+                  className={`flex m-2 w-[50px] px-2 rounded-lg hover:translate-y-0.5 hover:bg-gray-300 border-2 border-gray-500 transform transition`}
                 >
                   予約
                 </div>

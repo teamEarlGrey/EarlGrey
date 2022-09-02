@@ -61,7 +61,7 @@ const TopPage = () => {
                   設備
                 </a>
               </div>
-              <Link to="reserve">
+              <Link to="login">
                 <div className={`flex mx-2 px-2 rounded-lg hover:translate-y-0.5 hover:bg-gray-200 hover:border-b-2 hover:border-gray-300 transform transition`}>
                   <img
                     src="./images/reserve_page.png"
